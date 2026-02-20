@@ -33,7 +33,7 @@ def fetch_podcasts(source):
     
     for entry in feed.entries[:10]:
         title = entry.get("title", "No Title")
-        entry_link = entry.get("link", "") 
+        link = entry.get("link", "") 
         published = entry.get("published", "")
         
         audio_url = None
