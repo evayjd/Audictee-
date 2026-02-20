@@ -1,0 +1,5 @@
+feedparser #解析rss
+requests #http请求
+beautifulsoup4 #解析html
+openai#if i have money..not for now
+python-dotenv#读取环境变量
