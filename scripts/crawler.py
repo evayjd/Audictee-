@@ -45,9 +45,9 @@ def fetch_podcasts(source):
                 break 
 
         if not audio_url:
-            for link in entry.get("links", []):
-                if "audio" in link.get("type", ""):
-                    audio_url = link.get("href")
+            for link_obj in entry.get("links", []):
+                if "audio" in link_obj.get("type", ""):
+                    audio_url = link_obj.get("href")
                     break
 
         if not audio_url:
